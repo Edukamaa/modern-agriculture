@@ -1,0 +1,93 @@
+/* Reset some browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+/* Primary color palette */
+:root {
+  --color-skyblue: #00bfff;
+  --color-green: #28a745;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light-grey: #f5f5f5;
+}
+
+/* Basic typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--color-skyblue);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-green);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--color-skyblue);
+}
+
+/* Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.bg-skyblue {
+  background-color: var(--color-skyblue);
+}
+
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}

@@ -1,0 +1,130 @@
+/* Markets.css */
+
+.markets-container {
+  padding: 60px 20px;
+  background: #f9fafb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.markets-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2a7b3f;
+  margin-bottom: 20px;
+}
+
+.markets-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Sections */
+.markets-section {
+  margin-bottom: 50px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.markets-section:hover {
+  transform: translateY(-5px);
+}
+
+.markets-section h2 {
+  font-size: 2rem;
+  color: #256029;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #2a7b3f;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.markets-section p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Lists */
+.markets-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.markets-section li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  padding-left: 28px;
+  position: relative;
+  color: #333;
+}
+
+.markets-section li strong {
+  color: #2a7b3f;
+}
+
+.markets-section li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2a7b3f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.markets-footer {
+  text-align: center;
+  background: #2a7b3f;
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.markets-footer p {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .markets-title {
+    font-size: 2.2rem;
+  }
+
+  .markets-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .markets-intro {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .markets-container {
+    padding: 40px 15px;
+  }
+
+  .markets-section {
+    padding: 20px;
+  }
+
+  .markets-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .markets-intro {
+    font-size: 0.95rem;
+  }
+}

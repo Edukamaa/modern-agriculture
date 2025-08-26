@@ -1,0 +1,67 @@
+.agriInputs {
+  padding: 60px 20px;
+  background: #f8fff4;
+}
+
+.agriInputs .container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.inputsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.inputCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.inputCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.inputCard .icon {
+  font-size: 2.5rem;
+  color: #388e3c;
+  margin-bottom: 15px;
+}
+
+.inputCard h3 {
+  font-size: 1.4rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.inputCard p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.closingNote {
+  margin-top: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2e7d32;
+}

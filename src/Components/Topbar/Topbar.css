@@ -1,0 +1,47 @@
+/* Topbar.css */
+
+.topbar {
+  background-color: #002147; /* Navy Blue */
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.contact-info span {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #d62828; /* Red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .topbar {
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-bottom: 8px;
+  }
+  
+  .contact-info span {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    margin-top: 5px;
+  }
+}

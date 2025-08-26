@@ -1,0 +1,49 @@
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e8449;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #27ae60;
+  border: 2px solid #27ae60;
+}
+
+.btn-outline:hover {
+  background-color: #27ae60;
+  color: white;
+}

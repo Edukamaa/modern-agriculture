@@ -1,0 +1,83 @@
+.farm-scores-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.farm-scores-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.farm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.farm-form label {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.farm-form input {
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.farm-form input:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 6px rgba(39,174,96,0.3);
+}
+
+.farm-form button {
+  padding: 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.farm-form button:hover {
+  background: #219150;
+}
+
+.result-card {
+  margin-top: 25px;
+  padding: 20px;
+  background: #ffffff;
+  border-left: 6px solid #27ae60;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.result-card h3 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.result-card p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.result-card .profit {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.result-card .loss {
+  color: #e74c3c;
+  font-weight: bold;
+}
