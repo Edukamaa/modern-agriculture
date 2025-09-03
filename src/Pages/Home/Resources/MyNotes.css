@@ -1,15 +1,22 @@
+/* ================= Notes Container ================= */
 .notes-container {
   max-width: 900px;
-  margin: 30px auto;
-  padding: 25px;
+  margin: 40px auto;
+  padding: 28px;
   background: #fdfdfd;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.notes-container:hover {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
 }
 
 .notes-container h2 {
   text-align: center;
   color: #2c7a7b;
+  font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
@@ -17,21 +24,30 @@
   text-align: center;
   color: #555;
   margin-bottom: 20px;
+  font-size: 0.95rem;
 }
 
+/* ================= Note Input ================= */
 .note-input {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .note-input textarea {
-  min-height: 100px;
-  padding: 10px;
+  min-height: 110px;
+  padding: 12px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 6px;
+  border-radius: 8px;
   resize: vertical;
+  transition: 0.3s;
+}
+
+.note-input textarea:focus {
+  outline: none;
+  border-color: #2c7a7b;
+  box-shadow: 0 0 6px rgba(44, 122, 123, 0.3);
 }
 
 .note-input button {
@@ -39,28 +55,36 @@
   background: #2c7a7b;
   color: #fff;
   border: none;
-  padding: 10px 18px;
+  padding: 10px 20px;
   font-size: 15px;
-  border-radius: 6px;
+  font-weight: 600;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .note-input button:hover {
   background: #225e5f;
+  transform: translateY(-2px);
 }
 
+/* ================= Notes List ================= */
 .notes-list {
-  margin-top: 25px;
+  margin-top: 28px;
 }
 
+/* Note Card */
 .note-card {
   background: #fff;
-  padding: 15px;
+  padding: 18px;
   border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-bottom: 16px;
   transition: 0.3s ease;
+}
+
+.note-card:hover {
+  transform: scale(1.01);
 }
 
 .note-card.highlighted {
@@ -69,46 +93,119 @@
 }
 
 .note-card p {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   font-size: 16px;
+  line-height: 1.5;
   color: #333;
 }
 
+/* ================= Note Actions ================= */
 .note-actions {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .note-actions button {
-  padding: 6px 12px;
+  padding: 7px 14px;
   font-size: 14px;
+  font-weight: 500;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
+/* Edit */
 .note-actions button:nth-child(1) {
   background: #ffdd57;
   color: #333;
 }
 
+/* Highlight */
 .note-actions button:nth-child(2) {
   background: #4cafef;
   color: #fff;
 }
 
+/* Delete */
 .note-actions button:nth-child(3) {
   background: #e63946;
   color: #fff;
 }
 
 .note-actions button:hover {
-  opacity: 0.85;
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
+/* Empty State */
 .empty {
   text-align: center;
   color: #999;
   font-style: italic;
+  margin-top: 20px;
+}
+
+/* ================= Responsive Design ================= */
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .notes-container {
+    padding: 22px;
+  }
+  .notes-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small Tablets & Phones (≤ 768px) */
+@media (max-width: 768px) {
+  .notes-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+  .notes-container h2 {
+    font-size: 1.4rem;
+  }
+  .note-input textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .note-input button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .note-card p {
+    font-size: 14px;
+  }
+  .note-actions button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .notes-container {
+    margin: 20px 10px;
+    padding: 16px;
+  }
+  .notes-container h2 {
+    font-size: 1.2rem;
+  }
+  .note-input textarea {
+    font-size: 13px;
+  }
+  .note-input button {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+  .note-actions {
+    gap: 8px;
+  }
+  .note-actions button {
+    flex: 1;
+    padding: 8px;
+  }
 }

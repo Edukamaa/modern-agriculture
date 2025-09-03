@@ -72,3 +72,81 @@
 .project-btn:hover {
   background: #1b5e20;
 }
+
+/* ===================== */
+/* 📱 Responsive 2025 MQ */
+/* ===================== */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .projects-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .projects-header p {
+    font-size: 1rem;
+  }
+
+  .project-card img {
+    height: 200px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 40px 15px;
+  }
+
+  .projects-header h2 {
+    font-size: 2rem;
+  }
+
+  .projects-header p {
+    font-size: 0.95rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .projects-section {
+    padding: 30px 12px;
+  }
+
+  .projects-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .projects-header p {
+    font-size: 0.9rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-info p {
+    font-size: 0.85rem;
+  }
+
+  .project-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .project-card img {
+    height: 160px;
+  }
+}

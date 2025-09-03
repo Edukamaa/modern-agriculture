@@ -73,3 +73,62 @@
 .read-more:hover {
   background: #1b5e20;
 }
+
+/* ===================== */
+/* 📱 Responsive Queries */
+/* ===================== */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .insights-header h2 {
+    font-size: 2rem;
+  }
+  .insights-header p {
+    font-size: 1rem;
+  }
+  .insight-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .farm-insights {
+    padding: 3rem 1.5rem;
+  }
+  .insights-header h2 {
+    font-size: 1.8rem;
+  }
+  .insights-header p {
+    font-size: 0.95rem;
+  }
+  .insight-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .farm-insights {
+    padding: 2.5rem 1rem;
+  }
+  .insights-header h2 {
+    font-size: 1.6rem;
+  }
+  .insights-header p {
+    font-size: 0.9rem;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .insight-card h3 {
+    font-size: 1.1rem;
+  }
+  .insight-card p {
+    font-size: 0.9rem;
+  }
+  .read-more {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}

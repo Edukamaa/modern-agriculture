@@ -1,3 +1,4 @@
+/* Problems-Solutions Section */
 .problems-solutions-section {
   padding: 3rem 6%;
   background: linear-gradient(to right, #f6f9f4, #ffffff);
@@ -25,10 +26,15 @@
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   overflow: hidden;
-  flex: 1 1 45%;
-  max-width: 45%;
+  flex: 1 1 30%;   /* 👈 allows up to 3 per row */
+  max-width: 30%;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .ps-image {
@@ -62,6 +68,7 @@
   line-height: 1.6;
 }
 
+/* Animation */
 @keyframes fadeZoom {
   0% {
     opacity: 0;
@@ -73,12 +80,121 @@
   }
 }
 
-@media (max-width: 768px) {
+/* ================== RESPONSIVE BREAKPOINTS ================== */
+
+/* Extra Small Devices (≤480px - portrait phones) */
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
   .ps-row {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   .card {
     max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .ps-image {
+    height: 180px;
+  }
+
+  .ps-heading {
+    font-size: 1.3rem;
+  }
+
+  .ps-subheading {
+    font-size: 1rem;
+  }
+
+  .ps-paragraph {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Devices (481px–767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .ps-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .ps-image {
+    height: 200px;
+  }
+}
+
+/* Medium Devices (768px–1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-heading {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    flex: 1 1 45%;
+    max-width: 45%; /* 2 per row */
+  }
+
+  .ps-heading {
+    font-size: 1.4rem;
+  }
+
+  .ps-subheading {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large Devices (1024px–1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main-heading {
+    font-size: 2.4rem;
+  }
+
+  .card {
+    flex: 1 1 30%;
+    max-width: 30%; /* 3 per row */
+  }
+
+  .ps-image {
+    height: 220px;
+  }
+}
+
+/* Extra Large Devices (≥1440px) */
+@media (min-width: 1440px) {
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .card {
+    flex: 1 1 30%;
+    max-width: 30%; /* still 3 per row */
+  }
+
+  .ps-image {
+    height: 250px;
+  }
+
+  .ps-heading {
+    font-size: 1.8rem;
+  }
+
+  .ps-subheading {
+    font-size: 1.3rem;
+  }
+
+  .ps-paragraph {
+    font-size: 1.1rem;
   }
 }

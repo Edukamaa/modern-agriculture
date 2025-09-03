@@ -79,3 +79,82 @@
 .thank-you h3 {
   color: #2c7a2c;
 }
+
+/* ===================== */
+/* 📱 Responsive Queries */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .joinus-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .joinus-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .joinus-container p {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 13.5px;
+    padding: 9px;
+  }
+
+  .submit-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .joinus-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .joinus-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .joinus-container p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .joinus-form h3 {
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 13.5px;
+    padding: 10px;
+  }
+
+  .thank-you {
+    padding: 20px;
+  }
+
+  .thank-you h3 {
+    font-size: 1.1rem;
+  }
+}

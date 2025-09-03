@@ -56,3 +56,64 @@
 .mag-card a:hover {
   text-decoration: underline;
 }
+
+/* ===================== */
+/* 📱 Responsive Queries */
+/* ===================== */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .magazines h2 {
+    font-size: 1.8rem;
+  }
+  .magazines p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .magazines {
+    padding: 40px 15px;
+  }
+  .magazines h2 {
+    font-size: 1.6rem;
+  }
+  .magazines p {
+    font-size: 0.9rem;
+  }
+  .mag-card {
+    padding: 18px;
+  }
+  .mag-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .magazines {
+    padding: 30px 12px;
+  }
+  .magazines h2 {
+    font-size: 1.4rem;
+  }
+  .magazines p {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+  .mag-card {
+    padding: 15px;
+  }
+  .mag-card h3 {
+    font-size: 1.1rem;
+  }
+  .mag-card p {
+    font-size: 0.9rem;
+  }
+  .mag-card a {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+}

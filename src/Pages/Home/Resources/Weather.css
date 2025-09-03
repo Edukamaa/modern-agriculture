@@ -8,7 +8,6 @@
   background: #f9fdf9;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,14 +104,60 @@
   color: #333;
 }
 
-/* Responsive */
+/* ---------------- Responsive ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .weather-container {
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .weather-container h1 {
+    font-size: 26px;
+  }
+
+  .weather-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .outlook-day {
+    width: 120px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 600px) {
+  .weather-container h1 {
+    font-size: 22px;
+  }
+
+  .weather-container select {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .weather-card h2 {
+    font-size: 20px;
+  }
+
+  .weather-card p {
+    font-size: 14px;
+  }
+
   .outlook {
     flex-direction: column;
     align-items: center;
   }
 
   .outlook-day {
-    width: 80%;
+    width: 85%;
+  }
+
+  .advice {
+    font-size: 14px;
+    padding: 10px;
   }
 }

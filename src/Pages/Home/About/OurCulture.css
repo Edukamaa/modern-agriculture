@@ -156,3 +156,132 @@
   background: white;
   color: #228b22;
 }
+
+/* ===================== Responsive Breakpoints (2025 Standards) ===================== */
+
+/* Large desktops / TVs */
+@media (min-width: 1600px) {
+  .culture-container {
+    padding: 80px 15%;
+  }
+  .culture-intro h2 {
+    font-size: 3rem;
+  }
+  .culture-text h3 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Laptops & Medium desktops */
+@media (max-width: 1200px) {
+  .culture-intro h2 {
+    font-size: 2.2rem;
+  }
+  .culture-text h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablets (landscape & portrait) */
+@media (max-width: 992px) {
+  .culture-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .culture-section.reverse {
+    flex-direction: column;
+  }
+  .culture-image {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+/* Large smartphones / small tablets */
+@media (max-width: 768px) {
+  .culture-intro h2 {
+    font-size: 2rem;
+  }
+  .culture-intro p {
+    font-size: 1rem;
+  }
+  .culture-text h3 {
+    font-size: 1.6rem;
+  }
+  .culture-text p,
+  .culture-text ul {
+    font-size: 1rem;
+  }
+  .culture-visuals h3 {
+    font-size: 1.6rem;
+  }
+  .culture-slider img {
+    width: 260px;
+    height: 170px;
+  }
+  .culture-cta h2 {
+    font-size: 1.8rem;
+  }
+  .culture-cta p {
+    font-size: 1rem;
+  }
+}
+
+/* Standard smartphones */
+@media (max-width: 576px) {
+  .culture-intro h2 {
+    font-size: 1.7rem;
+  }
+  .culture-intro p {
+    font-size: 0.95rem;
+  }
+  .culture-text h3 {
+    font-size: 1.4rem;
+  }
+  .culture-slider img {
+    width: 200px;
+    height: 140px;
+  }
+  .cta-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Small smartphones & foldables */
+@media (max-width: 400px) {
+  .culture-intro h2 {
+    font-size: 1.4rem;
+  }
+  .culture-intro p {
+    font-size: 0.85rem;
+  }
+  .culture-text h3 {
+    font-size: 1.2rem;
+  }
+  .culture-slider img {
+    width: 160px;
+    height: 120px;
+  }
+  .culture-cta h2 {
+    font-size: 1.5rem;
+  }
+  .culture-cta p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ultra-small devices (wearables / micro screens) */
+@media (max-width: 320px) {
+  .culture-intro h2 {
+    font-size: 1.1rem;
+  }
+  .culture-intro p {
+    font-size: 0.75rem;
+  }
+  .cta-btn {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+}

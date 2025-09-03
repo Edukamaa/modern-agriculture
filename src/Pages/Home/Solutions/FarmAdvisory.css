@@ -50,3 +50,75 @@
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+
+/* ================== Responsive ================== */
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .advisory-section {
+    padding: 40px 15px;
+  }
+
+  .advisory-title {
+    font-size: 1.8rem;
+  }
+
+  .advisory-intro {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .advisory-card {
+    padding: 15px;
+  }
+
+  .advisory-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .advisory-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .advisory-title {
+    font-size: 2.2rem;
+  }
+
+  .advisory-intro {
+    font-size: 1.05rem;
+  }
+
+  .advisory-card h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Large devices (desktops and bigger) */
+@media (min-width: 1200px) {
+  .advisory-section {
+    padding: 80px 60px;
+  }
+
+  .advisory-title {
+    font-size: 3rem;
+  }
+
+  .advisory-intro {
+    font-size: 1.2rem;
+  }
+
+  .advisory-card {
+    padding: 25px;
+  }
+
+  .advisory-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .advisory-card p {
+    font-size: 1.05rem;
+  }
+}

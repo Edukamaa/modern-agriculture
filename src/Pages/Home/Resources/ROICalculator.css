@@ -102,3 +102,70 @@
   color: #c62828;
   font-weight: bold;
 }
+
+/* ------------------ Responsive Design ------------------ */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .roi-container {
+    padding: 30px 20px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .roi-info,
+  .roi-details,
+  .roi-tips {
+    padding: 15px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+  .roi-container {
+    padding: 20px 15px;
+  }
+
+  .roi-container h1 {
+    font-size: 22px;
+  }
+
+  .intro {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .roi-form {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .roi-form label {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+
+  .roi-form input {
+    width: 100%;
+    margin: 5px 0 10px 0;
+    font-size: 14px;
+  }
+
+  .roi-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .roi-info h2,
+  .roi-details h2,
+  .roi-tips h2 {
+    font-size: 18px;
+  }
+
+  .roi-result {
+    padding: 12px;
+  }
+}

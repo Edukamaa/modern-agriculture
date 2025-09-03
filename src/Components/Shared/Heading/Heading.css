@@ -18,6 +18,7 @@
   margin-bottom: 1.5rem;
 }
 
+/* Buttons */
 .btn {
   padding: 12px 28px;
   border: none;
@@ -46,4 +47,91 @@
 .btn-outline:hover {
   background-color: #27ae60;
   color: white;
+}
+
+/* ================== RESPONSIVE BREAKPOINTS ================== */
+
+/* Extra Small Devices (≤480px - small phones) */
+@media (max-width: 480px) {
+  .heading-primary {
+    font-size: 2rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.5rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 22px;
+  }
+}
+
+/* Small Devices (481px–767px - large phones / small tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .heading-primary {
+    font-size: 2.3rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.7rem;
+  }
+
+  .subheading {
+    font-size: 1.05rem;
+  }
+}
+
+/* Medium Devices (768px–1023px - tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large Devices (1024px–1439px - laptops/desktops) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .heading-primary {
+    font-size: 2.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.9rem;
+  }
+
+  .subheading {
+    font-size: 1.15rem;
+  }
+}
+
+/* Extra Large Devices (≥1440px - large desktops/TVs) */
+@media (min-width: 1440px) {
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+
+  .subheading {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    font-size: 1.05rem;
+    padding: 14px 32px;
+  }
 }

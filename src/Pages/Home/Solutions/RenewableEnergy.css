@@ -1,3 +1,5 @@
+/* Renewable.css */
+
 .renewable-container {
   padding: 40px;
   background: #f9f9f9;
@@ -67,4 +69,103 @@
   text-align: center;
   margin-top: 40px;
   font-weight: bold;
+}
+
+/* ================= Responsive ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .renewable-title {
+    font-size: 2.2rem;
+  }
+
+  .renewable-intro {
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+  }
+
+  .renewable-image {
+    width: 260px;
+    height: 180px;
+  }
+
+  .renewable-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .renewable-container {
+    padding: 20px;
+  }
+
+  .renewable-title {
+    font-size: 1.8rem;
+  }
+
+  .renewable-intro {
+    font-size: 1rem;
+  }
+
+  .renewable-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .renewable-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .renewable-content {
+    margin-top: 15px;
+  }
+
+  .renewable-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .formula,
+  .calculation {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .renewable-conclusion {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .renewable-container {
+    padding: 60px;
+  }
+
+  .renewable-title {
+    font-size: 3rem;
+  }
+
+  .renewable-intro {
+    font-size: 1.3rem;
+  }
+
+  .renewable-section {
+    gap: 30px;
+    padding: 25px;
+  }
+
+  .renewable-image {
+    width: 360px;
+    height: 240px;
+  }
+
+  .renewable-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .renewable-conclusion {
+    font-size: 1.5rem;
+  }
 }

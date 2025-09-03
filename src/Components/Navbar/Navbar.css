@@ -1,26 +1,70 @@
+/* ================= BASE NAVBAR ================= */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Logo left, controls right */
   background-color: white;
-  padding: 10px 30px;
+  padding: 10px 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 999;
-  height: 80px;
+  height: 70px;
 }
 
+/* ================= LOGO ================= */
 .navbar-logo img {
-  height: 150px; /* 50px x 3 */
-  margin-top: -30px;
+  height: 120px; /* default size on large screens */
+  object-fit: contain;
+  margin: 0;
+  transition: transform 0.3s ease;
 }
 
+/* ================= CONTROLS (Back + Ham) ================= */
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* spacing between back + menu */
+}
+
+/* Back button */
+.back-btn {
+  display: none; /* default hidden */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  order: 1; /* appears before hamburger */
+}
+
+.back-btn:hover {
+  color: green;
+}
+
+/* Hamburger menu button */
+.menu-toggle {
+  display: none; /* hidden by default */
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  transition: transform 0.3s ease;
+  order: 2;
+}
+
+.menu-toggle.active {
+  transform: rotate(90deg);
+}
+
+/* ================= NAV LINKS ================= */
 .navbar-links {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin-left: -60px; /* push pages to the left */
+  margin: 0;
   padding: 0;
 }
 
@@ -43,6 +87,7 @@
   color: green;
 }
 
+/* ================= DROPDOWN ================= */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -83,4 +128,148 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  .navbar {
+    height: auto;
+  }
+
+  .navbar-logo img {
+    height: 70px; /* scaled down */
+    transform: scale(0.9); /* zoom down */
+  }
+
+  .navbar-controls {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .back-btn {
+    display: block; /* show back */
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a,
+  .navbar-links span {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar-links a:hover,
+  .navbar-links span:hover {
+    background: #f2f2f2;
+    color: green;
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
+    display: none;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li {
+    padding: 8px 0;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .navbar-logo img {
+    height: 100px; /* scaled down */
+    transform: scale(0.95);
+  }
+
+  .navbar-controls {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .back-btn {
+    display: block; /* show back */
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+}
+
+/* Large devices (laptops & desktops) */
+@media (min-width: 1024px) {
+  .back-btn {
+    display: none; /* hide back */
+  }
+
+  .menu-toggle {
+    display: none; /* hide hamburger */
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px;
+    height: 80px;
+  }
+
+  .navbar-logo img {
+    height: 120px; /* full size */
+    transform: none;
+  }
+
+  .navbar-links {
+    display: flex !important;
+    flex-direction: row;
+  }
 }

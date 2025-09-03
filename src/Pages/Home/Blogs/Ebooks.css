@@ -66,3 +66,74 @@
 .download-btn:hover {
   background: #1b5e20;
 }
+
+/* ===================== */
+/* 📱 Responsive 2025 MQ */
+/* ===================== */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .ebooks h2 {
+    font-size: 1.8rem;
+  }
+
+  .ebooks p {
+    font-size: 1rem;
+  }
+
+  .ebook-card h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .ebooks {
+    padding: 40px 15px;
+  }
+
+  .ebooks h2 {
+    font-size: 1.6rem;
+  }
+
+  .ebooks p {
+    font-size: 0.95rem;
+  }
+
+  .ebook-card {
+    padding: 18px;
+  }
+
+  .ebook-card img {
+    margin-bottom: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .ebooks {
+    padding: 30px 12px;
+  }
+
+  .ebooks h2 {
+    font-size: 1.4rem;
+  }
+
+  .ebooks p {
+    font-size: 0.9rem;
+  }
+
+  .ebook-card h3 {
+    font-size: 1rem;
+  }
+
+  .ebook-card p {
+    font-size: 0.85rem;
+  }
+
+  .download-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+  }
+}

@@ -63,3 +63,63 @@
 .webinar-card .btn:hover {
   background: #1b5e20;
 }
+
+/* ===================== */
+/* 📱 Responsive Queries */
+/* ===================== */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .webinars h2 {
+    font-size: 1.8rem;
+  }
+  .webinars p {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .webinars {
+    padding: 30px 20px;
+  }
+  .webinars h2 {
+    font-size: 1.6rem;
+  }
+  .webinars p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  .webinar-card {
+    padding: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .webinars {
+    padding: 20px 15px;
+  }
+  .webinars h2 {
+    font-size: 1.4rem;
+  }
+  .webinars p {
+    font-size: 0.85rem;
+  }
+  .webinar-list {
+    grid-template-columns: 1fr; /* stack cards */
+  }
+  .webinar-card {
+    padding: 15px;
+  }
+  .webinar-card h3 {
+    font-size: 1rem;
+  }
+  .webinar-card p {
+    font-size: 0.9rem;
+  }
+  .webinar-card .btn {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+}

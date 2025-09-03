@@ -1,3 +1,4 @@
+/* ===================== FOOTER BASE ===================== */
 .footer {
   background-color: #1b4332; /* dark green background */
   color: #e0e0d1; /* light greenish text */
@@ -78,6 +79,121 @@
 .footer-socials a:hover {
   color: red; /* red hover */
 }
+
 .footer-bottom p {
   color: white;
+}
+
+/* ===================== MEDIA QUERIES ===================== */
+
+/* Extra Small Devices (phones portrait ≤480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 15px 20px;
+    font-size: 0.85rem;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-socials a {
+    margin: 0 8px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Devices (481px–767px, phones landscape & small tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer {
+    padding: 50px 20px 25px;
+    font-size: 0.9rem;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* Medium Devices (768px–1023px, tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    padding: 60px 25px 30px;
+  }
+
+  .footer-row {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .footer-col {
+    flex: 1 1 45%;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* Large Devices (1024px–1439px, laptops/desktops) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .footer {
+    padding: 70px 30px 40px;
+  }
+
+  .footer-col {
+    flex: 1 1 22%;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Large Devices (≥1440px, big desktops/TVs) */
+@media (min-width: 1440px) {
+  .footer {
+    padding: 80px 40px 50px;
+  }
+
+  .footer-container {
+    max-width: 1400px;
+  }
+
+  .footer-col h5 {
+    font-size: 1.2rem;
+  }
+
+  .footer-col p,
+  .footer-col a {
+    font-size: 1rem;
+  }
+
+  .footer-socials a {
+    font-size: 1.6rem;
+  }
 }

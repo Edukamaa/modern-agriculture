@@ -57,3 +57,69 @@
   font-size: 0.9rem;
   color: #666;
 }
+
+/* ===================== */
+/* 📱 Responsive Queries */
+/* ===================== */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .reels-title {
+    font-size: 1.8rem;
+  }
+  .reels-subtitle {
+    font-size: 1rem;
+  }
+  .reel-card {
+    width: 260px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .reels-container {
+    padding: 25px;
+  }
+  .reels-title {
+    font-size: 1.6rem;
+  }
+  .reels-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  .reel-card {
+    width: 220px;
+  }
+  .caption {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .reels-container {
+    padding: 20px 10px;
+  }
+  .reels-title {
+    font-size: 1.4rem;
+  }
+  .reels-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+  .reels-feed {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .reel-card {
+    width: 100%;
+    max-width: 350px;
+  }
+  .caption {
+    font-size: 0.9rem;
+  }
+  .reel-meta {
+    font-size: 0.85rem;
+  }
+}

@@ -72,3 +72,75 @@
   color: #555;
   list-style-type: disc;
 }
+
+/* ===== Responsive 2025 Media Queries ===== */
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .section-paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .info-card.reverse {
+    flex-direction: column;
+  }
+  .card-image img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-section {
+    padding: 3rem 5%;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .section-subtitle {
+    font-size: 1.2rem;
+  }
+  .section-paragraph,
+  .section-list li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-card {
+    padding: 1.5rem;
+  }
+  .section-title {
+    font-size: 1.4rem;
+  }
+  .section-paragraph {
+    font-size: 0.9rem;
+  }
+  .card-image img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .vision-section {
+    padding: 2rem 4%;
+  }
+  .info-card {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+  .section-paragraph,
+  .section-list li {
+    font-size: 0.85rem;
+  }
+}
