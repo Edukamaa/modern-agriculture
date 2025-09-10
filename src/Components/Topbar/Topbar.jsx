@@ -10,7 +10,7 @@ const Topbar = () => {
         {/* Contact Info */}
         <div className="contact-info">
           <span><strong>Email:</strong> info@kamaraagriculturalsolutions.com</span>
-          <span className="ms-md-3"><strong>Phone:</strong> +254-712-907-068</span>
+          <span className="ms-md-3"><strong>Phone:</strong> +254-722-785-480</span>
         </div>
 
         {/* Social Media Icons */}
